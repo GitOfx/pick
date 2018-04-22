@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5A9BD5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="当前卡片名"
+            android:gravity="center"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_life_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="重要说明"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorAccent"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_carda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="A卡 x3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/c1"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_cardb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="B卡 x3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/c1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_cardc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="C卡 x3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/c1"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_cardd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="D卡 x3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/c1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_pick_card"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tv_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="抽卡"
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    android:background="@color/c2"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_pick_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="抽卡次数10"
+                    android:gravity="center"
+                     />
+            </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/ll_nextday"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp"
+                 android:layout_weight="1">
+                 <TextView
+                     android:layout_marginTop="20dp"
+                     android:id="@+id/tv_next"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="20sp"
+                     android:text="下一天"
+                     android:gravity="center"
+                     android:padding="10dp"
+                     android:background="@color/c2"/>
+                 <TextView
+                     android:layout_marginTop="10dp"
+                     android:id="@+id/tv_day_num"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="当前天数10"
+                     android:gravity="center"
+                     />
+             </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
